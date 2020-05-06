@@ -2,27 +2,27 @@
 const staticCacheName = 'site-static';
 ////
 const staticAssets = [
-    '/',
-    '/index.html',
-    '/pages/restoran.html',
-    '/manifest.json',
-    '/js/app.js',
-    '/img/android-icon-36x36.png',
-    '/img/android-icon-48x48.png',
-    '/img/android-icon-72x72.png',
-    '/img/android-icon-96x96.png',
-    '/img/android-icon-144x144.png',
-    '/img/android-icon-192x192.png',
-    '/img/icon.png',
-    '/img/retro2.jpg',
-    '/css/w3.css',
-    '/css/styles.css',
-    '/img/pizza.jpg',
-    '/img/chef.jpg',
-    '/img/onepage_restaurant.jpg',
-    '/img/map.jpg',
-    '/fonts/AmaticSC-Regular.ttf',
-    '/fonts/AmaticSC-Bold.ttf',
+    '/cetvrti-domaci/',
+    '/cetvrti-domaci/index.html',
+    '/cetvrti-domaci/pages/restoran.html',
+    '/cetvrti-domaci/manifest.json',
+    '/cetvrti-domaci/js/app.js',
+    '/cetvrti-domaci/img/android-icon-36x36.png',
+    '/cetvrti-domaci/img/android-icon-48x48.png',
+    '/cetvrti-domaci/img/android-icon-72x72.png',
+    '/cetvrti-domaci/img/android-icon-96x96.png',
+    '/cetvrti-domaci/img/android-icon-144x144.png',
+    '/cetvrti-domaci/img/android-icon-192x192.png',
+    '/cetvrti-domaci/img/icon.png',
+    '/cetvrti-domaci/img/retro2.jpg',
+    '/cetvrti-domaci/css/w3.css',
+    '/cetvrti-domaci/css/styles.css',
+    '/cetvrti-domaci/img/pizza.jpg',
+    '/cetvrti-domaci/img/chef.jpg',
+    '/cetvrti-domaci/img/onepage_restaurant.jpg',
+    '/cetvrti-domaci/img/map.jpg',
+    '/cetvrti-domaci/fonts/AmaticSC-Regular.ttf',
+    '/cetvrti-domaci/fonts/AmaticSC-Bold.ttf',
 ];
 
 
@@ -33,8 +33,6 @@ self.addEventListener('install', async eventObject => {
     const cache = await caches.open(staticCacheName);
     // dodajemo asete u kes
     await cache.addAll(staticAssets);
-
-
     return self.skipWaiting();
    
 }); 
